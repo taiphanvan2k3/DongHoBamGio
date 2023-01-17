@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace DongHoBamGio
 {
-    public partial class Form1 : Form
+    public partial class Clock : Form
     {
         private int hours, minutes, seconds, tick;
         private Thread t;
@@ -63,7 +63,7 @@ namespace DongHoBamGio
             }
         }
 
-        public Form1()
+        public Clock()
         {
             hours = minutes = seconds = tick = 0;
             t = new Thread(() =>

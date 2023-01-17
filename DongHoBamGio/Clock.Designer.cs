@@ -1,6 +1,6 @@
 ﻿namespace DongHoBamGio
 {
-    partial class Form1
+    partial class Clock
     {
         /// <summary>
         /// Required designer variable.
