@@ -32,6 +32,8 @@
             this.btnRestart = new System.Windows.Forms.Button();
             this.btnStartPause = new System.Windows.Forms.Button();
             this.labelTick = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.toggleButtonCustom1 = new CustomControls.ToggleButtonCustom();
             this.SuspendLayout();
             // 
             // labelShowTime
@@ -82,19 +84,47 @@
             this.labelTick.Text = "00";
             this.labelTick.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(530, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 16);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Change background";
+            // 
+            // toggleButtonCustom1
+            // 
+            this.toggleButtonCustom1.Location = new System.Drawing.Point(686, 24);
+            this.toggleButtonCustom1.MinimumSize = new System.Drawing.Size(45, 22);
+            this.toggleButtonCustom1.Name = "toggleButtonCustom1";
+            this.toggleButtonCustom1.OffBackColor = System.Drawing.Color.Gray;
+            this.toggleButtonCustom1.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.toggleButtonCustom1.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.toggleButtonCustom1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.toggleButtonCustom1.Size = new System.Drawing.Size(71, 22);
+            this.toggleButtonCustom1.SolidState = true;
+            this.toggleButtonCustom1.TabIndex = 4;
+            this.toggleButtonCustom1.Text = "toggleButtonCustom1";
+            this.toggleButtonCustom1.UseVisualStyleBackColor = true;
+            this.toggleButtonCustom1.CheckedChanged += new System.EventHandler(this.toggleButtonCustom1_CheckedChanged);
+            // 
+            // Clock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.toggleButtonCustom1);
             this.Controls.Add(this.labelTick);
             this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.btnStartPause);
             this.Controls.Add(this.labelShowTime);
-            this.Name = "Form1";
+            this.Name = "Clock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -104,6 +134,8 @@
         private System.Windows.Forms.Button btnRestart;
         private System.Windows.Forms.Button btnStartPause;
         private System.Windows.Forms.Label labelTick;
+        private CustomControls.ToggleButtonCustom toggleButtonCustom1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

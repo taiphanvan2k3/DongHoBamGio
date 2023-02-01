@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Security.Policy;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -51,6 +52,18 @@ namespace DongHoBamGio
                 res += "0";
             res += seconds;
             return res;
+        }
+
+        private void toggleButtonCustom1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (toggleButtonCustom1.Checked)
+            {
+                this.BackColor = Color.Gray;
+            }
+            else
+            {
+                this.BackColor = Color.WhiteSmoke;
+            }
         }
 
         private void btnRestart_Click(object sender, EventArgs e)
